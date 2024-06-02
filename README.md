@@ -1,4 +1,6 @@
-# gh-run
+# gh-run [![JSR](https://jsr.io/badges/@pal/gh-run)](https://jsr.io/@pal/gh-run) [![JSR Score](https://jsr.io/badges/@pal/gh-run/score)](https://jsr.io/@pal/gh-run)
+
+
 
 This package aims to simplify the execution of deno scripts located in private repositories hosted on `github.com`.
 
@@ -27,6 +29,3 @@ To access private GitHub repositories an authentication token is required. This 
 > [!NOTE]
 > If you want to use `GH_TOKEN` while also having `gh` CLI installed, combine the direct passing of a token with the env var, i.e. `--token="$GH_TOKEN"`.
 <!--deno-fmt-ignore-end-->
-
-### Other features
-
