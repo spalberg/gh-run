@@ -1,0 +1,19 @@
+In the realm of JavaScript, three tools stand tall,
+Deno, Node, and Bun, answering the call.
+Deno, the newcomer, with security in mind,
+A runtime built on Rust, leaving vulnerabilities behind.
+
+Node, the veteran, with a vast ecosystem to explore,
+Powering countless applications, a developer's core.
+With NPM at its side, packages galore,
+Node keeps evolving, always ready for more.
+
+And then there's Bun, a bundler so neat,
+Optimizing code, making it complete.
+With tree shaking and minification, it excels,
+Bun helps deliver performance, casting its spells.
+
+So whether you choose Deno, Node, or Bun,
+Each has its strengths, a battle never won.
+Embrace the power they bring, let your code shine,
+And create amazing things, one line at a time.

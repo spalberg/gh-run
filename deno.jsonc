@@ -8,7 +8,8 @@
     "exclude": ["src/examples", "src/**/*_test.ts"]
   },
   "tasks": {
-    "dev": "deno run -A --watch src/main.ts"
+    "dev": "deno run -A --watch src/main.ts",
+    "examples:complex:run": "deno run -c src/examples/complex/deno.json -A src/examples/complex/main.ts"
   },
   "lint": {
     "include": ["src/"],
