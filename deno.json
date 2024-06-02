@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch src/main.ts"
+  },
+  "lint": {
+    "include": ["src/"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "include": ["src/"],
+    "singleQuote": true,
+    "lineWidth": 120
+  }
+}
