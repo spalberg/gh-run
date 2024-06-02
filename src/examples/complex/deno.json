@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@std/fmt": "jsr:@std/fmt@^0.225.2",
+    "cowsay": "https://deno.land/x/cowsay/mod.ts"
+  }
+}
