@@ -36,7 +36,7 @@ type GhRunOptions = {
 export async function ghRun(scriptUrl: string, {
   token,
   configFileUrl,
-}: GhRunOptions) {
+}: GhRunOptions): Promise<{ statusCode: number; configFile: string | null }> {
   const configFile = configFileUrl != null ? await getConfigFile(configFileUrl, token) : null;
 
   const args = ['run', '-A'];
