@@ -8,12 +8,14 @@
     "exclude": ["src/examples", "src/**/*_test.ts"]
   },
   "tasks": {
+    "test": "deno test -A",
     "dev": "deno run -A --watch src/main.ts",
+    "examples:simple:run": "deno run -A src/examples/simple/main.ts",
     "examples:complex:run": "deno run -c src/examples/complex/deno.json -A src/examples/complex/main.ts"
   },
   "imports": {
-    "@std/log": "jsr:@std/log@^0.224.1",
-    "cliffy/command": "https://deno.land/x/cliffy@v1.0.0-rc.4/command/mod.ts"
+    "@cliffy/command": "jsr:@cliffy/command@^1.0.0-rc.4",
+    "@std/log": "jsr:@std/log@^0.224.1"
   },
   "lint": {
     "include": ["src/"],

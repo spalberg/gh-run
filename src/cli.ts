@@ -1,5 +1,5 @@
 import * as log from '@std/log';
-import { Command } from 'cliffy/command';
+import { Command } from '@cliffy/command';
 import denoJson from '../deno.json' with { type: 'json' };
 import { checkCommandAvailability, run } from './utils.ts';
 import { ghRun } from './gh_run.ts';

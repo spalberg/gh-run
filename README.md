@@ -1,7 +1,6 @@
 # gh-run [![JSR](https://jsr.io/badges/@pal/gh-run)](https://jsr.io/@pal/gh-run) [![JSR Score](https://jsr.io/badges/@pal/gh-run/score)](https://jsr.io/@pal/gh-run)
 
 
-
 This package aims to simplify the execution of deno scripts located in private repositories hosted on `github.com`.
 
 <!--deno-fmt-ignore-start-->
@@ -15,6 +14,12 @@ Simply run the [jsr](https://jsr.io)-hosted version of this package and provide 
 
 ```bash
 deno run -A jsr:@pal/gh-run https://github.com/spalberg/gh-run/blob/main/src/examples/simple/main.ts
+```
+
+If needed, you can specify the config file to use:
+
+```bash
+deno run -A jsr:@pal/gh-run https://github.com/spalberg/gh-run/blob/main/src/complex/simple/main.ts --config https://github.com/spalberg/gh-run/blob/main/src/examples/complex/deno.json
 ```
 
 ### Authentication

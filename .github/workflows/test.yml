@@ -1,12 +1,10 @@
-name: Publish
+name: Test
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
 
 jobs:
-  publish:
+  test:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -19,4 +17,3 @@ jobs:
       - run: deno task test
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: deno publish
