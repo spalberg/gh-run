@@ -13,13 +13,16 @@ This package aims to simplify the execution of deno scripts located in private r
 Simply run the [jsr](https://jsr.io)-hosted version of this package and provide a script url:
 
 ```bash
-deno run -A jsr:@pal/gh-run https://github.com/spalberg/gh-run/blob/main/src/examples/simple/main.ts
+deno run -A jsr:@pal/gh-run \
+https://github.com/spalberg/gh-run/blob/main/src/examples/simple/main.ts
 ```
 
 If needed, you can specify the config file to use:
 
 ```bash
-deno run -A jsr:@pal/gh-run https://github.com/spalberg/gh-run/blob/main/src/complex/simple/main.ts --config https://github.com/spalberg/gh-run/blob/main/src/examples/complex/deno.json
+deno run -A jsr:@pal/gh-run \
+https://github.com/spalberg/gh-run/blob/main/src/examples/complex/main.ts \
+--config https://github.com/spalberg/gh-run/blob/main/src/examples/complex/deno.json
 ```
 
 ### Authentication
