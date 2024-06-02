@@ -1,4 +1,12 @@
 {
+  "name": "@pal/gh-run",
+  "version": "0.0.1",
+  "description": "Simply run all your scripts from public and private github.com repositories",
+  "exports": "./src/main.ts",
+  "publish": {
+    "include": ["src"],
+    "exclude": ["src/examples"]
+  },
   "tasks": {
     "dev": "deno run -A --watch src/main.ts"
   },

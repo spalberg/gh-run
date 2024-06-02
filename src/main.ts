@@ -62,6 +62,6 @@ if (import.meta.main) {
   const configFileUrl = Deno.args[1];
 
   const { statusCode, configFile } = await ghRun(scriptUrl, { token, configFileUrl });
-  if (configFile != null) await Deno.remove(configFile);
+  if (configFile != null) await Deno.remove(configFile); // cleanup in every case, using using?
   Deno.exit(statusCode);
 }
