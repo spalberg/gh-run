@@ -9,7 +9,6 @@ console.log(say({
 }));
 
 console.log("\n\nHere is a poem for you:\n");
-
-const file = normalize(dirname(import.meta.url) + "/poem.txt");
-const poem = Deno.readTextFileSync(file);
+const poem = await fetch(normalize(dirname(import.meta.url) + "/poem.txt"))
+  .then((res) => res.text());
 console.log(bgBlack(yellow(poem)));
