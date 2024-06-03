@@ -1,6 +1,6 @@
 {
   "name": "@pal/gh-run",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simply run all your deno scripts from public and private github.com repositories",
   "exports": "./src/mod.ts",
   "publish": {

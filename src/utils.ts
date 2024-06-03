@@ -9,7 +9,7 @@ export function run(cmd: string, ...args: string[]): { code: number; stdout: str
 }
 
 export function checkCommandAvailability(cmd: string): boolean {
-  const { code } = isWindows() ? run(`(gcm ${cmd}).Path`) : run('which', cmd);
+  const { code } = run(isWindows() ? 'where' : 'which', cmd);
   return code === 0;
 }
 
